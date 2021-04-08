@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:text="bulan tahun"
+        android:textSize="35dp"
+        android:padding="15dp"
+        android:fontFamily="@font/carrois_gothic_sc"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:id="@+id/fragment_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <WebView
+        android:layout_below="@id/fragment_tanggal"
+        android:id="@+id/webview_chart"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@id/webview_chart"
+        android:id="@+id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:text="positive po"
+            android:textSize="25dp"
+            android:padding="15dp"
+            android:fontFamily="@font/carrois_gothic_sc"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:id="@+id/fragment_po"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/greenChart"/>
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:text="negative ne"
+            android:textSize="25dp"
+            android:padding="15dp"
+            android:fontFamily="@font/carrois_gothic_sc"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:id="@+id/fragment_ne"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/redChart"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/linear_2"
+        android:padding="15dp"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/carrois_gothic_sc"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:text="back"
+        android:id="@+id/fragment_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
